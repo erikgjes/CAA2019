@@ -3,7 +3,7 @@ library(tidyverse)
 library(e1071)
 library(pracma)
 
-sw_pots<-read.csv("~/Dropbox/CAA_2019_Krakow/sw_db_2.csv")
+sw_pots<-read.csv("sw_db_2.csv")
 
 sw_pots <- sw_pots %>% filter(!is.na(Region)) %>% filter(!is.na(SWSN_type)) %>% filter(!is.na(SWSN_Ware))
 
